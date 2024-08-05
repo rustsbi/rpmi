@@ -1,5 +1,6 @@
 [package]
 name = "rpmi"
+description = "RISC-V Platform Management Interface (RPMI) constants and runtime library"
 version = "0.0.0"
 edition = "2021"
 authors = [
