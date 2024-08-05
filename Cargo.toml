@@ -1,0 +1,15 @@
+[package]
+name = "rpmi"
+version = "0.0.0"
+edition = "2021"
+authors = [
+    "Luo Jia <me@luojia.cc>",
+]
+documentation = "https://docs.rs/rpmi"
+license = "MulanPSL-2.0 OR MIT"
+repository = "https://github.com/rustsbi/rpmi"
+readme = "README.md"
+keywords = ["riscv", "rpmi"]
+categories = ["os", "embedded", "hardware-support", "no-std"]
+
+[dependencies]
