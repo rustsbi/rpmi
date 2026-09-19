@@ -7,6 +7,9 @@
 ///
 /// Slot size is `4 * SLOT_WORDS` bytes; `SLOT_WORDS` must be a power of two
 /// and at least 16. `MESSAGE_SLOTS >= 2` gives a usable ring with one slot empty.
+///
+/// The shared-memory base address must be slot-aligned; this type does not
+/// enforce that placement.
 #[repr(C)]
 pub struct Queue<const SLOT_WORDS: usize, const MESSAGE_SLOTS: usize> {
     /// Next message to dequeue, in word 0; remaining words are unused.
